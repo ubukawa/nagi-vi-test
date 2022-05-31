@@ -26,7 +26,7 @@ const showMap = async (texts) => {
     hash: true,
     style: 'style-maplibre.json',
     maxZoom: 24,
-    maxPitch: 85,
+    maxPitch: 85
   })
   map.addControl(new mapgl.NavigationControl())
   map.addControl(new mapgl.ScaleControl({
