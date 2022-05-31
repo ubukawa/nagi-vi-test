@@ -22,7 +22,7 @@ let map
 const showMap = async (texts) => {
   const mapgl = mapboxgl
   mapgl.accessToken = 
-    'pk.eyJ1IjoiaGZ1IiwiYSI6ImNsM3FtcWVjZzBidWgza3A3ajZzdjlnZDAifQ.wTaURNl4e3NMZHbw50LupQ'
+    'pk.eyJ1IjoidC11YnVrYXdhIiwiYSI6ImNrb3NuemYxeDAwazQybm55YXUwZ281MmkifQ.MDqjOP45DIUcpLSCI9JAGg'
   map = new mapgl.Map({
     container: 'map',
     hash: true,
