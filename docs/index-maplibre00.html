@@ -1,0 +1,39 @@
+<html>
+<head>
+<meta charset='utf-8' />
+<title>Display a map</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src="https://ubukawa.github.io/nagi-vi-test/maplibre/maplibre-gl.js"></script>
+<link href="https://ubukawa.github.io/nagi-vi-test/maplibre/maplibre-gl.css" rel="stylesheet"  />
+<link href="style.css" rel="stylesheet"  />
+</head>
+<body>
+ 
+<div id='map'></div>
+
+<script>
+var map = new maplibregl.Map({
+  container: 'map', 
+  hash: true, 
+  style: 'style-maplibre00.json',
+  maxZoom: 24,
+  maxPitch: 85
+});
+
+
+//UI
+map.addControl(new maplibregl.NavigationControl(), 'bottom-right');
+map.addControl(new maplibregl.ScaleControl() );
+map.addControl(new maplibregl.TerrainControl({
+  source: "terrainSource",
+  exaggeration: 1
+}) );
+
+//debug
+//map.showTileBoundaries = true;
+//map.showCollisionBoxes = false;
+
+</script>
+ 
+</body>
+</html>
