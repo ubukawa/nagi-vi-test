@@ -13,8 +13,8 @@ const script = src => {
 
 const init = () => {
   style('style.css')
-  style('https://ubukawa.github.io/nagi-vi-test/maplibre/maplibre-gl.css')
-  script('https://ubukawa.github.io/nagi-vi-test/maplibre/maplibre-gl.js')
+  style('https://ubukawa.github.io/nagi-vi-test/maplibre-gl@2.2.1/maplibre-gl.css')
+  script('https://ubukawa.github.io/nagi-vi-test/maplibre-gl@2.2.1/maplibre-gl.js')
 }
 init()
 
